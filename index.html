@@ -5,28 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myportfolio</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="title">
-        <h1>My Portfolio</h1>
+    <!-- Fixed Navigation Bar Section -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+              <h1 class="nav-branding">My Portfolio</h1>
+              <ul class="nav-menu">
+                  <li class="nav-link"><a href="/">About Me</a></li>
+                  <li class="nav-link"><a href="/">Work</a></li>
+                  <li class="nav-link"><a href="/">Contact Me</a></li>
+                  <li class="nav-link"><a href="/">Resume</a></li>
+              </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li>
-                About Me
-            </li>
-            <li>
-                Work
-            </li>
-            <li>
-                Contact Me
-            </li>
-            <li>
-                Resume
-            </li>
-        </ul>
-    </nav>
+    
     <main>
         <!-- About Me -->
         <section>
@@ -42,6 +39,34 @@
             <img src="./assets/images/Portfolio.jpg">
             <img src="./assets/images/Portfolio.jpg">
             <img src="./assets/images/Portfolio.jpg">
+        </section>
+        <section>
+            <aside class="container">
+                <div class="aboutme">
+                    <h1>About Me</h1>
+                </div>
+            </aside>
+        </section>
+        <section>
+            <aside class="container">
+                <div class="work">
+                    <h1>Work</h1>
+                </div>
+            </aside>
+        </section>
+        <section>
+            <aside class="container">
+                <div class="contactme">
+                    <h1>Contact Me</h1>
+                </div>
+            </aside>
+        </section>
+        <section>
+            <aside class="container">
+                <div class="resume">
+                    <h1>Resume</h1>
+                </div>
+            </aside>
         </section>
     </main>
     <!-- Contact Me -->
