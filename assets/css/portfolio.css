@@ -43,6 +43,12 @@ a {
     align-items: center;
 }
 
+@media(max-width:1280px){
+    .container{
+        width: 100%;
+    }
+}
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -81,4 +87,12 @@ a {
     border: 1px solid black;
     padding: 10px;
     box-sizing: border-box;
+}
+
+/* Footer */
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
