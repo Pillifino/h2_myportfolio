@@ -1,3 +1,4 @@
+/* Universal Section */
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +8,11 @@ body {
     position: relative;
 }
 
+.clr {
+    clear: both;
+}
+
+/* Navbar Section */
 header {
     position: fixed;
     top: 0;
@@ -49,21 +55,30 @@ a {
     color: cornsilk;
 }
 
-.aboutme, .work, .contactme, .resume {
-    height: 720px;
+/* About Me */
+
+.main-block {
+    float: right;
+    width: 70%;
     margin-top: 70px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+    margin-top: 70px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/*  Work */
+
+.work {
+    float: left;
+    width: 25%;
     border: 1px solid black;
-}
-
-@media(max-width:1280px){
-    .container {
-        width: 100%;
-    }
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: coral;
+    padding: 10px;
+    box-sizing: border-box;
 }
