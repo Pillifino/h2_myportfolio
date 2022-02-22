@@ -81,12 +81,13 @@ a {
 
 /*  Work */
 
-.work {
+.work-container img {
     float: left;
-    width: 25%;
-    border: 1px solid black;
+    width: 50%;
+    border: 1px solid red;
     padding: 10px;
     box-sizing: border-box;
+    display: block;
 }
 
 /* Footer */
