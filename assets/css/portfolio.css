@@ -61,25 +61,29 @@ a {
     color: cornsilk;
 }
 
-/* About Me */
-
-.main-block {
-    float: right;
-    width: 70%;
-    margin-top: 70px;
-    box-sizing: border-box;
-    padding: 15px;
-}
-
-.sidebar{
+/* Main Content */
+.section-name {
     float: left;
-    width: 30%;
+    width: 20%;
+    margin-top: 70px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+    /* About Me */
+
+.aboutme-container {
+    float: right;
+    width: 80%;
     margin-top: 70px;
     box-sizing: border-box;
     padding: 15px;
 }
 
-/*  Work */
+    /*  Work */
+.work-container {
+    float: right;
+    width: 80%;
+}
 
 .work-container img {
     float: left;
@@ -90,7 +94,7 @@ a {
     display: block;
 }
 
-/* Footer */
+    /* Footer */
 
 .contact-info {
     display: flex;
