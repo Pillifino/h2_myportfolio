@@ -21,9 +21,49 @@ h1,
 h2 {
     margin-bottom: 15px;
 }
-
+/* No Bullet Points on LI */
+li {
+    list-style: none;
+}
+/* Limits Header Navbar And Content to 1100 px And Centers It*/
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0;
+}
+
+.navbar {
+    background: rgb(255, 60, 0);
+    color: whitesmoke;
+    height: 100px;
+}
+/* My Portfolio Styling */
+.navbar.logo {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Puts Navbar Content Into A Row By Choosing Div As Container Instead of Nav 
+{If Nav Is Parent then Div is the only child! 
+Div has 2 Children (Logo & Nav) */
+.navbar .container {
+    display: flex;
+    /* Puts Children At Each End Of Parent Container */
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+/* Changes UL Default Style From Collumn To Row */
+.navbar ul {
+    display: flex;
+}
+/* Add Spicing To li (child) Class Container (Parent) */
+.navbar ul li {
+    margin-left: 20px;
 }
