@@ -1,103 +1,29 @@
 /* Universal Section */
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
-    position: relative;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: rgb(255, 106, 60);
 }
 
-.clr {
-    clear: both;
+img {
+    max-width: 100%;
 }
 
-/* Navbar Section */
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: coral;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    color: cornsilk;
-    text-decoration: none;
+h1,
+h2 {
+    margin-bottom: 15px;
 }
 
 .container {
-    width: 1280px;
-    margin: auto;
-}
-
-.navbar {
-    width: 95%;
-    margin: auto;
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@media(max-width:1280px){
-    .container{
-        width: 100%;
-    }
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-}
-
-.nav-branding {
-    font-size: 2rem;
-    color: cornsilk;
-}
-
-/* Main Content */
-.section-name {
-    float: left;
-    width: 20%;
-    margin-top: 70px;
-    box-sizing: border-box;
-    padding: 15px;
-}
-    /* About Me */
-
-.aboutme-container {
-    float: right;
-    width: 80%;
-    margin-top: 70px;
-    box-sizing: border-box;
-    padding: 15px;
-}
-
-    /*  Work */
-.work-container {
-    float: right;
-    width: 80%;
-}
-
-.work-container img {
-    float: left;
-    width: 50%;
-    border: 1px solid red;
-    padding: 10px;
-    box-sizing: border-box;
-    display: block;
-}
-
-    /* Footer */
-
-.contact-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
 }
