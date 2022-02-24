@@ -30,6 +30,7 @@ main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0;
+    border-left: 5px solid #fff;
     /* background-color: black; */
 }
 
@@ -80,9 +81,10 @@ Div has 2 Children (Logo & Nav) */
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     /* background-color: blueviolet; */
     flex: 1;
-    border-left: 5px solid #fff;
+    /* border-left: 5px solid #fff; */
 }
 
 .about-right {
@@ -105,10 +107,11 @@ Div has 2 Children (Logo & Nav) */
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     flex: 1;
     /* background-color: darkgoldenrod; */
     height: 510px;
-    border-left: 5px solid #fff;
+    /* border-left: 5px solid #fff; */
 }
 
 .work-right {
@@ -145,13 +148,14 @@ Div has 2 Children (Logo & Nav) */
     display: flex;
     flex: 1;
     /* background-color: green; */
-    border-left: 5px solid #fff;
+    /* border-left: 5px solid #fff; */
 }
 
 .contact-right {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
     flex: 9;
     /* background-color: green; */
 }
@@ -180,6 +184,10 @@ Div has 2 Children (Logo & Nav) */
         flex-flow: column wrap;
     }
 
+            /* Header Line */
+main {
+    border-left: none;
+}
             /* About Me */
     .about-container {
         flex-flow: column;
