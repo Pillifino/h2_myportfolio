@@ -30,6 +30,14 @@ li {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0;
+    /* background-color: black; */
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    /* background-color: red; */
 }
 
 .navbar {
@@ -78,20 +86,24 @@ Div has 2 Children (Logo & Nav) */
 .about-container {
     display: flex;
     gap: 100px;
+    /* background-color: blue; */
+    align-items: center;
 }
 
-.left-section {
+.about-left {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: blueviolet; */
+    flex: 1;
 }
 
-.right-section {
+.about-right {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-end;
+    flex: 8;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* background-color: blueviolet; */
 }
 
     /* Work */
@@ -102,24 +114,52 @@ Div has 2 Children (Logo & Nav) */
 
 .work-container {
     display: flex;
-    gap: 10px;
     align-items: center;
+    /* background-color: black; */
+    flex-wrap: wrap;
 }
+
+.work-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    /* background-color: darkgoldenrod */
+}
+
+.work-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 9;
+    /* background-color: darkgoldenrod; */
+}
+
 
     /* Contact Me */
 .contact-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.contact-container ul {
+.contact-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    /* background-color: green; */
+}
+
+.contact-right {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex: 9;
+    /* background-color: green; */
 }
 
-.contact-box ul li {
+.contact-right li {
     margin-left: 20px;
 }
 
