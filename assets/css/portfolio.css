@@ -69,7 +69,7 @@ Div has 2 Children (Logo & Nav) */
 }
 
 /* Main Section (Testing) */
-
+    /* About Me */
 .about-box {
     align-items: center;
     justify-content: center;
@@ -78,12 +78,6 @@ Div has 2 Children (Logo & Nav) */
 .about-container {
     display: flex;
     gap: 100px;
-}
-
-@media screen and (min-width: 200px) and (max-width: 678px) {
-    .about-container {
-        flex-flow: column;
-    }
 }
 
 .left-section {
@@ -100,10 +94,7 @@ Div has 2 Children (Logo & Nav) */
     flex-direction: column;
 }
 
-
-
-
-
+    /* Work */
 .work-box {
     align-items: center;
     justify-content: center;
@@ -115,16 +106,7 @@ Div has 2 Children (Logo & Nav) */
     align-items: center;
 }
 
-@media screen and (max-width: 678px) and (min-width: 200px) {
-    .work-container {
-        flex-flow: column wrap;
-    }
-
-    .work-container img {
-        width: 100%;
-    }
-}
-
+    /* Contact Me */
 .contact-container{
     display: flex;
     justify-content: space-between;
@@ -141,7 +123,24 @@ Div has 2 Children (Logo & Nav) */
     margin-left: 20px;
 }
 
-@media screen and (max-width: 678px) {
+    /* Responsive Screens */
+        /* Extra small devices (phones, 600px and down */
+@media only screen and (max-width:600px) {
+            /* About Me */
+    .about-container {
+        flex-flow: column;
+    }
+
+            /* Work */
+    .work-container {
+        flex-flow: column wrap;
+    }
+
+    .work-container img {
+        width: 100%;
+    }
+
+            /* Contact Me */
     .contact-container {
         flex-direction: column;
     }
@@ -152,41 +151,3 @@ Div has 2 Children (Logo & Nav) */
         flex-wrap: wrap;
     }
 }
-
-/* Main Section */
-/* 
-.image-box {
-    background-color: red;
-}
-
-.image-box {
-    display: flex;
-    justify-content: center;
-}
-
-.image-container {
-    display: flex;
-    width: 40%;
-    box-sizing: border-box;
-    background-color: #333;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-img {
-    width: 50%;
-}
-
-@media screen and (max-width:768px) {
-    img {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width:560px) {
-    img {
-        width: 100%;
-    }
-} */
