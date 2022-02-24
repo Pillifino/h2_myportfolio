@@ -26,20 +26,11 @@ li {
     list-style: none;
 }
 /* Limits Header Navbar And Content to 1100 px And Centers It*/
-.container {
+main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0;
-    /* background-color: black; */
-}
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0;
-    /* background-color: red; */
+    background-color: black;
 }
 
 .navbar {
@@ -79,11 +70,6 @@ Div has 2 Children (Logo & Nav) */
 }
 
 /* About Me */
-.about-box {
-    align-items: center;
-    justify-content: center;
-}
-
 .about-container {
     display: flex;
     gap: 100px;
@@ -93,26 +79,19 @@ Div has 2 Children (Logo & Nav) */
 
 .about-left {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     background-color: blueviolet;
     flex: 1;
 }
 
 .about-right {
     display: flex;
-    justify-content: flex-end;
     flex: 8;
-    flex-wrap: wrap;
     background-color: blueviolet;
 }
 
     /* Work */
-.work-box {
-    align-items: center;
-    justify-content: center;
-}
-
 .work-container {
     display: flex;
     align-items: center;
@@ -123,16 +102,12 @@ Div has 2 Children (Logo & Nav) */
 
 .work-left {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     flex: 1;
     background-color: darkgoldenrod
 }
 
 .work-right {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
     flex: 9;
     flex-wrap: wrap-reverse;
@@ -140,7 +115,7 @@ Div has 2 Children (Logo & Nav) */
 }
 
 .box-1 {
-    flex: 1;
+    flex: 4;
 }
 
 .box-2 {
@@ -162,8 +137,6 @@ Div has 2 Children (Logo & Nav) */
 
 .contact-left {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex: 1;
     background-color: green;
 }
