@@ -30,7 +30,7 @@ main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .navbar {
@@ -72,7 +72,7 @@ Div has 2 Children (Logo & Nav) */
 /* About Me */
 .about-container {
     display: flex;
-    background-color: blue;
+    /* background-color: blue; */
     align-items: center;
 }
 
@@ -80,14 +80,15 @@ Div has 2 Children (Logo & Nav) */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     flex: 1;
+    border-left: 5px solid #fff;
 }
 
 .about-right {
     display: flex;
     flex: 9;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     text-align: center;
 }
 
@@ -95,7 +96,7 @@ Div has 2 Children (Logo & Nav) */
 .work-container {
     display: flex;
     align-items: center;
-    background-color: orchid;
+    /* background-color: orchid; */
     flex-wrap: wrap;
     width: 100%;
 }
@@ -105,8 +106,9 @@ Div has 2 Children (Logo & Nav) */
     align-items: center;
     justify-content: center;
     flex: 1;
-    background-color: darkgoldenrod;
-    height: 510px
+    /* background-color: darkgoldenrod; */
+    height: 510px;
+    border-left: 5px solid #fff;
 }
 
 .work-right {
@@ -114,7 +116,7 @@ Div has 2 Children (Logo & Nav) */
     gap: 10px;
     flex: 9;
     flex-wrap: wrap-reverse;
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
 }
 
 .box-1 {
@@ -142,7 +144,8 @@ Div has 2 Children (Logo & Nav) */
     text-align: center;
     display: flex;
     flex: 1;
-    background-color: green;
+    /* background-color: green; */
+    border-left: 5px solid #fff;
 }
 
 .contact-right {
@@ -150,7 +153,7 @@ Div has 2 Children (Logo & Nav) */
     align-items: center;
     justify-content: flex-start;
     flex: 9;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .contact-right li {
