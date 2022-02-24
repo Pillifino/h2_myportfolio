@@ -27,7 +27,11 @@ li {
 }
 /* Limits Header Navbar And Content to 1100 px And Centers It*/
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 1100px;
+    height: 1100px;
     margin: 0 auto;
     padding: 0;
     border-left: 5px solid #fff;
@@ -121,9 +125,26 @@ Div has 2 Children (Logo & Nav) */
     flex-wrap: wrap-reverse;
     /* background-color: darkgoldenrod; */
 }
+    /* Picture Borders */
+.box-1 {
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+.box-2 {
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+.box-3 {
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+.box-4 {
+    box-sizing: border-box;
+    border: 5px solid black;
+}
 
 .box-1 {
-    flex: 4;
+    flex: 2;
 }
 
 .box-2 {
@@ -200,6 +221,10 @@ main {
 
     .work-container img {
         width: 100%;
+    }
+
+    .box-1,.box-2,.box-3,.box-4{
+        border: none;
     }
 
             /* Contact Me */
