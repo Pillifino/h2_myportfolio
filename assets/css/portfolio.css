@@ -72,23 +72,23 @@ Div has 2 Children (Logo & Nav) */
 /* About Me */
 .about-container {
     display: flex;
-    gap: 100px;
     background-color: blue;
     align-items: center;
 }
 
 .about-left {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     background-color: blueviolet;
     flex: 1;
 }
 
 .about-right {
     display: flex;
-    flex: 8;
+    flex: 9;
     background-color: blueviolet;
+    text-align: center;
 }
 
     /* Work */
@@ -102,8 +102,11 @@ Div has 2 Children (Logo & Nav) */
 
 .work-left {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
-    background-color: darkgoldenrod
+    background-color: darkgoldenrod;
+    height: 510px
 }
 
 .work-right {
@@ -136,6 +139,7 @@ Div has 2 Children (Logo & Nav) */
 }
 
 .contact-left {
+    text-align: center;
     display: flex;
     flex: 1;
     background-color: green;
@@ -151,6 +155,13 @@ Div has 2 Children (Logo & Nav) */
 
 .contact-right li {
     margin-left: 20px;
+}
+
+.contact-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
     /* Responsive Screens */
