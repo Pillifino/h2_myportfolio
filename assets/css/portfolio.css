@@ -34,6 +34,8 @@ li {
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0;
@@ -46,15 +48,15 @@ li {
     height: 100px;
 }
 /* My Portfolio Styling */
-.navbar.logo {
-    font-size: x-large;
+.logo {
+    font-size: 40px;
     font-weight: bolder;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
 }
 /* Puts Navbar Content Into A Row By Choosing Div As Container Instead of Nav 
@@ -64,7 +66,7 @@ Div has 2 Children (Logo & Nav) */
     display: flex;
     /* Puts Children At Each End Of Parent Container */
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     height: 100%;
 }
 /* Changes UL Default Style From Collumn To Row */
@@ -73,11 +75,10 @@ Div has 2 Children (Logo & Nav) */
 }
 /* Add Spicing To li (child) Class Container (Parent) */
 .navbar ul li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
-/* Main Section (Testing) */
-    /* About Me */
+/* About Me */
 .about-box {
     align-items: center;
     justify-content: center;
@@ -86,7 +87,7 @@ Div has 2 Children (Logo & Nav) */
 .about-container {
     display: flex;
     gap: 100px;
-    /* background-color: blue; */
+    background-color: blue;
     align-items: center;
 }
 
@@ -94,7 +95,7 @@ Div has 2 Children (Logo & Nav) */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     flex: 1;
 }
 
@@ -103,7 +104,7 @@ Div has 2 Children (Logo & Nav) */
     justify-content: flex-end;
     flex: 8;
     flex-wrap: wrap;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
 }
 
     /* Work */
@@ -115,8 +116,9 @@ Div has 2 Children (Logo & Nav) */
 .work-container {
     display: flex;
     align-items: center;
-    /* background-color: black; */
+    background-color: orchid;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .work-left {
@@ -124,7 +126,7 @@ Div has 2 Children (Logo & Nav) */
     align-items: center;
     justify-content: flex-start;
     flex: 1;
-    /* background-color: darkgoldenrod */
+    background-color: darkgoldenrod
 }
 
 .work-right {
@@ -133,10 +135,25 @@ Div has 2 Children (Logo & Nav) */
     align-items: center;
     gap: 10px;
     flex: 9;
-    /* background-color: darkgoldenrod; */
+    flex-wrap: wrap-reverse;
+    background-color: darkgoldenrod;
 }
 
+.box-1 {
+    flex: 1;
+}
 
+.box-2 {
+    flex: 1;
+}
+
+.box-3 {
+    flex: 1;
+}
+
+.box-4 {
+    flex: 1;
+}
     /* Contact Me */
 .contact-container{
     display: flex;
@@ -148,7 +165,7 @@ Div has 2 Children (Logo & Nav) */
     justify-content: center;
     align-items: center;
     flex: 1;
-    /* background-color: green; */
+    background-color: green;
 }
 
 .contact-right {
@@ -156,7 +173,7 @@ Div has 2 Children (Logo & Nav) */
     align-items: center;
     justify-content: flex-start;
     flex: 9;
-    /* background-color: green; */
+    background-color: green;
 }
 
 .contact-right li {
@@ -166,6 +183,16 @@ Div has 2 Children (Logo & Nav) */
     /* Responsive Screens */
         /* Extra small devices (phones, 600px and down */
 @media only screen and (max-width:600px) {
+            /* NavBar */
+    .navbar {
+        height: 150px;
+    }
+
+    ul {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
             /* About Me */
     .about-container {
         flex-flow: column;
