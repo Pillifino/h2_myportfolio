@@ -9,7 +9,7 @@ body {
     font-family: monospace;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
+    color: whitesmoke;
     background: rgb(255, 106, 60);
 }
 
@@ -19,7 +19,7 @@ img {
 
 h1,
 h2 {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
 /* No Bullet Points on LI */
 li {
@@ -80,13 +80,26 @@ Div has 2 Children (Logo & Nav) */
     gap: 100px;
 }
 
-.about-container h2{
-    flex-grow: 1;
+@media screen and (min-width: 200px) and (max-width: 678px) {
+    .about-container {
+        flex-flow: column;
+    }
 }
 
-.about-container p {
-    flex-grow: 3;
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.right-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 
 
 
@@ -99,10 +112,46 @@ Div has 2 Children (Logo & Nav) */
 .work-container {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
     align-items: center;
 }
 
+@media screen and (max-width: 678px) and (min-width: 200px) {
+    .work-container {
+        flex-flow: column wrap;
+    }
+
+    .work-container img {
+        width: 100%;
+    }
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-box ul li {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 678px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 /* Main Section */
 /* 
