@@ -102,7 +102,7 @@ Div has 2 Children (Logo & Nav) */
 .work-container {
     display: flex;
     align-items: center;
-    /* background-color: orchid; */
+    background-color: orchid;
     flex-wrap: wrap;
     width: 100%;
 }
