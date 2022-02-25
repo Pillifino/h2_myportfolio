@@ -58,7 +58,7 @@ main {
 /* Puts Navbar Content Into A Row By Choosing Div As Container Instead of Nav 
 {If Nav Is Parent then Div is the only child! 
 Div has 2 Children (Logo & Nav) */
-.navbar .container {
+.container {
     display: flex;
     /* Puts Children At Each End Of Parent Container */
     justify-content: space-between;
@@ -209,6 +209,19 @@ Div has 2 Children (Logo & Nav) */
 main {
     border-left: none;
 }
+
+        /* Navar */
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        /* background-color: black; */
+    }
+
             /* About Me */
     .about-container {
         flex-flow: column;
