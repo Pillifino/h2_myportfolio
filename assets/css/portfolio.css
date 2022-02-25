@@ -29,9 +29,21 @@ li {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    height: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    border-left: 5px solid #fff;
+    /* background-color: black; */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     max-width: 1100px;
-    height: 1100px;
+    height: 100px;
     margin: 0 auto;
     padding: 0;
     border-left: 5px solid #fff;
@@ -245,6 +257,10 @@ h2 {
     }
 
             /* Contact Me */
+    footer {
+        border-left: none;
+    }
+
     .contact-container {
         flex-direction: column;
     }
@@ -308,6 +324,11 @@ margin-bottom: 10px;
 }
 
         /* Contact Me */
+footer {
+    border-left: none;
+}
+        
+
 .contact-container {
     flex-direction: column;
 }
