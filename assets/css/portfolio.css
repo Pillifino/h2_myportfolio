@@ -194,7 +194,7 @@ Div has 2 Children (Logo & Nav) */
 
     /* Responsive Screens */
         /* Extra small devices (phones, 600px and down */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1125px) {
             /* NavBar */
     .navbar {
         height: 150px;
