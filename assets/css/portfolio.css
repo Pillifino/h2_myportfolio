@@ -210,6 +210,10 @@ main {
     border-left: none;
 }
 
+h2 {
+    margin-bottom: 10px;
+}
+
         /* Navar */
     .container {
         flex-direction: row;
