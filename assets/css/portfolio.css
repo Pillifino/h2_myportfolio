@@ -134,7 +134,7 @@ Div has 2 Children (Logo & Nav) */
     display: flex;
     gap: 10px;
     flex: 4;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     /* background-color: darkgoldenrod; */
 }
     /* Picture Borders */
