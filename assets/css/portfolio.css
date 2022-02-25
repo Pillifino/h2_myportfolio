@@ -105,7 +105,7 @@ Div has 2 Children (Logo & Nav) */
 
 .about-right {
     display: flex;
-    flex: 9;
+    flex: 4;
     /* background-color: blueviolet; */
     text-align: center;
 }
@@ -133,7 +133,7 @@ Div has 2 Children (Logo & Nav) */
 .work-right {
     display: flex;
     gap: 10px;
-    flex: 9;
+    flex: 4;
     flex-wrap: wrap-reverse;
     /* background-color: darkgoldenrod; */
 }
@@ -179,6 +179,8 @@ Div has 2 Children (Logo & Nav) */
 .contact-left {
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     /* background-color: green; */
     /* border-left: 5px solid #fff; */
@@ -189,7 +191,7 @@ Div has 2 Children (Logo & Nav) */
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex: 9;
+    flex: 4;
     /* background-color: green; */
 }
 
@@ -343,6 +345,10 @@ footer {
 /* Desktops/Large Screens */
 
 @media only screen and (min-width:769px) and (max-width:1024px) {
+
+h2 {
+    margin-bottom: 10px;
+}
 
 .about-left {
     display: flex;
