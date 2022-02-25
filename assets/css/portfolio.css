@@ -194,7 +194,7 @@ Div has 2 Children (Logo & Nav) */
 
     /* Responsive Screens */
         /* Extra small devices (phones, 600px and down */
-@media only screen and (max-width:1125px) {
+@media only screen and (max-width:400px) {
             /* NavBar */
     .navbar {
         height: 150px;
@@ -254,4 +254,67 @@ h2 {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+     /* Normal sized devices (phones, 678px and down */
+     @media only screen and (max-width:678px) {
+        /* NavBar */
+.navbar {
+    height: 150px;
+}
+
+ul {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+        /* Header Line */
+main {
+border-left: none;
+}
+
+h2 {
+margin-bottom: 10px;
+}
+
+    /* Navar */
+.container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav {
+    flex-direction: row;
+    /* background-color: black; */
+}
+
+        /* About Me */
+.about-container {
+    flex-flow: column;
+}
+
+        /* Work */
+.work-container {
+    flex-flow: column wrap;
+}
+
+.work-container img {
+    width: 100%;
+}
+
+.box-1,.box-2,.box-3,.box-4{
+    border: none;
+}
+
+        /* Contact Me */
+.contact-container {
+    flex-direction: column;
+}
+
+.contact-container ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 }
