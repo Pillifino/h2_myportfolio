@@ -1,5 +1,6 @@
 body {
     background-color: rgb(255, 94, 0);
+    font-family: monospace;
 }
 
 main {
@@ -35,6 +36,7 @@ h2 {
 
 p {
     font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 li {
