@@ -16,10 +16,6 @@ main {
     color: whitesmoke;
 }
 
-li {
-    list-style: none;
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -31,6 +27,19 @@ footer {
     border-left: 5px solid #fff;
     color: whitesmoke;
     background-color: darkorange;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
 }
 
 .navbar {
@@ -63,6 +72,8 @@ Div has 2 Children (Logo & Nav) */
 /* Changes UL Default Style From Collumn To Row */
 .navbar ul {
     display: flex;
+    /* keeps menu option from hitting screen on the right side */
+    margin-right: 10px;
 }
 /* Add Spicing To li (child) Class Container (Parent) */
 .navbar ul li {
@@ -72,7 +83,8 @@ Div has 2 Children (Logo & Nav) */
 /* About Section */
 .about-container {
     display: flex;
-    align-items: center
+    align-items: center;
+    height: 100%;
 }
 
 .about-left {
@@ -95,6 +107,7 @@ Div has 2 Children (Logo & Nav) */
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .work-left {
@@ -129,7 +142,8 @@ Div has 2 Children (Logo & Nav) */
 .contact-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    height: 100%;
 }
 
 .contact-left {
@@ -162,9 +176,5 @@ Div has 2 Children (Logo & Nav) */
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .contact-right li {
-        text-align: center;
     }
 }
