@@ -1,41 +1,23 @@
-/* Universal Section */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    font-family: monospace;
-    font-size: 16px;
-    line-height: 1.5;
-    color: whitesmoke;
-    background: rgb(255, 106, 60);
+    background-color: rgb(255, 94, 0);
 }
 
-img {
-    max-width: 100%;
-}
-
-h1,
-h2 {
-    margin-bottom: 50px;
-}
-/* No Bullet Points on LI */
-li {
-    list-style: none;
-}
-/* Limits Header Navbar And Content to 1100 px And Centers It*/
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     max-width: 1100px;
     height: 1100px;
     margin: 0 auto;
     padding: 0;
     border-left: 5px solid #fff;
-    /* background-color: black; */
+    background-color: darkorange;
+    color: whitesmoke;
+}
+
+li {
+    list-style: none;
 }
 
 footer {
@@ -43,11 +25,12 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     max-width: 1100px;
-    height: 100px;
+    height: 160px;
     margin: 0 auto;
     padding: 0;
     border-left: 5px solid #fff;
-    /* background-color: black; */
+    color: whitesmoke;
+    background-color: darkorange;
 }
 
 .navbar {
@@ -57,14 +40,14 @@ footer {
 }
 /* My Portfolio Styling */
 .logo {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 /* Puts Navbar Content Into A Row By Choosing Div As Container Instead of Nav 
@@ -86,320 +69,102 @@ Div has 2 Children (Logo & Nav) */
     margin-left: 25px;
 }
 
-/* About Me */
+/* About Section */
 .about-container {
     display: flex;
-    /* background-color: blue; */
-    align-items: center;
+    align-items: center
 }
 
 .about-left {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    /* background-color: blueviolet; */
+    align-items: center;
     flex: 1;
-    /* border-left: 5px solid #fff; */
 }
 
 .about-right {
     display: flex;
-    flex: 4;
-    /* background-color: blueviolet; */
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    flex: 4;
 }
 
-    /* Work */
+/* Work Section */
 .work-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* background-color: orchid; */
-    flex-wrap: wrap;
-    width: 100%;
 }
 
 .work-left {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     flex: 1;
-    /* background-color: darkgoldenrod; */
-    height: 510px;
-    /* border-left: 5px solid #fff; */
 }
 
 .work-right {
     display: flex;
-    gap: 10px;
-    flex: 4;
+    justify-content: center;
     flex-wrap: wrap;
-    /* background-color: darkgoldenrod; */
-}
-    /* Picture Borders */
-.box-1 {
+    flex: 4;
     box-sizing: border-box;
-    border: 5px solid black;
 }
-.box-2 {
-    box-sizing: border-box;
+
+.work-right img {
     border: 5px solid black;
-}
-.box-3 {
     box-sizing: border-box;
-    border: 5px solid black;
-}
-.box-4 {
-    box-sizing: border-box;
-    border: 5px solid black;
 }
 
 .box-1 {
-    flex: 2;
+    width: 100%;
 }
 
-.box-2 {
-    flex: 1;
+.box-2, .box-3, .box-4 {
+    width: 33.33%;
 }
 
-.box-3 {
-    flex: 1;
-}
-
-.box-4 {
-    flex: 1;
-}
-    /* Contact Me */
-.contact-container{
+/* Contact Section */
+.contact-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .contact-left {
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
-    /* background-color: green; */
-    /* border-left: 5px solid #fff; */
 }
 
 .contact-right {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     flex: 4;
-    /* background-color: green; */
-}
-
-.contact-right li {
-    margin-left: 20px;
 }
 
 .contact-right a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
+    color: whitesmoke;
 }
 
-    /* Responsive Screens */
-        /* Extra small devices (phones, 600px and down */
-@media only screen and (min-width:320px) and (max-width:400px) {
-            /* NavBar */
-    .navbar {
-        height: 150px;
-    }
-
-    ul {
-        display: flex;
-        flex-flow: column wrap;
-    }
-
-            /* Header Line */
-main {
-    border-left: none;
-}
-
-h2 {
-    margin-bottom: 10px;
-}
-
-        /* Navar */
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav {
-        flex-direction: row;
-        /* background-color: black; */
-    }
-
-            /* About Me */
-    .about-container {
-        flex-flow: column;
-    }
-
-            /* Work */
-    .work-container {
-        flex-flow: column wrap;
-    }
-
-    .work-container img {
-        width: 100%;
-    }
-
-    .box-1,.box-2,.box-3,.box-4{
-        border: none;
-    }
-
-            /* Contact Me */
-    footer {
-        border-left: none;
-    }
-
-    .contact-container {
+/* Small Screens */
+@media only screen and (min-width: 400px) and (max-width:678px) {
+    .container,.about-container,.work-container,.contact-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .contact-container ul {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+    .contact-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-}
 
-     /* Normal sized devices (phones, 678px and down */
-     @media only screen and (min-width: 481px) and (max-width:768px) {
-        /* NavBar */
-.navbar {
-    height: 150px;
-}
-
-ul {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-        /* Header Line */
-main {
-border-left: none;
-}
-
-h2 {
-margin-bottom: 10px;
-}
-
-    /* Navar */
-.container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.nav {
-    flex-direction: row;
-    /* background-color: black; */
-}
-
-        /* About Me */
-.about-container {
-    flex-flow: column;
-}
-
-        /* Work */
-.work-container {
-    flex-flow: column wrap;
-}
-
-.work-container img {
-    width: 100%;
-}
-
-.box-1,.box-2,.box-3,.box-4{
-    border: none;
-}
-
-        /* Contact Me */
-footer {
-    border-left: none;
-}
-        
-
-.contact-container {
-    flex-direction: column;
-}
-
-.contact-container ul {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-}
-
-/* Desktops/Large Screens */
-
-@media only screen and (min-width:769px) and (max-width:1024px) {
-
-h2 {
-    margin-bottom: 10px;
-}
-
-.about-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* background-color: blueviolet; */
-    flex: 1;
-    /* border-left: 5px solid #fff; */
-}
-    
-.about-right {
-    display: flex;
-    flex: 9;
-    /* background-color: blueviolet; */
-    text-align: center;
-}
-
-.work-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex: 1;
-    /* background-color: darkgoldenrod; */
-    height: 510px;
-    /* border-left: 5px solid #fff; */
-}
-
-.work-right {
-    display: flex;
-    gap: 10px;
-    flex: 9;
-    flex-wrap: wrap;
-    /* background-color: darkgoldenrod; */
-}
-
-.contact-left {
-    text-align: center;
-    display: flex;
-    flex: 1;
-    /* background-color: green; */
-    /* border-left: 5px solid #fff; */
-}
-
-.contact-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex: 4;
-    /* background-color: green; */
-}
+    .contact-right li {
+        text-align: center;
+    }
 }
