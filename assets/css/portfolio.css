@@ -50,6 +50,7 @@ li {
     background: rgb(255, 60, 0);
     color: whitesmoke;
     height: 100px;
+    width: 100%;
 }
 /* My Portfolio Styling */
 .logo {
@@ -73,6 +74,7 @@ Div has 2 Children (Logo & Nav) */
     justify-content: space-between;
     align-items: flex-end;
     height: 100%;
+    width: 100%;
 }
 /* Changes UL Default Style From Collumn To Row */
 .navbar ul {
