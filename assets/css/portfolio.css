@@ -8,8 +8,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1100px;
-    height: 1100px;
+    max-width: 80%;
+    /* height: 1100px; */
     margin: 0 auto;
     padding: 0;
     border-left: 5px solid #fff;
@@ -22,8 +22,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 1100px;
-    height: 160px;
+    max-width: 80%;
+    height: 160%;
     margin: 0 auto;
     padding: 0;
     border-left: 5px solid #fff;
@@ -166,6 +166,7 @@ Div has 2 Children (Logo & Nav) */
 }
 
 .contact-right a {
+    font-size: 1.2rem;
     color: whitesmoke;
 }
 
