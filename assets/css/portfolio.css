@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(19, 2, 2);
+    /* background-color: rgb(19, 2, 2); */
+    background: #FFA17F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #00223E, #FFA17F);  
+    background: linear-gradient(to bottom, #00223E, #FFA17F); 
     font-family: monospace;
 }
 
@@ -12,9 +15,10 @@ main {
     /* height: 1100px; */
     margin: 0 auto;
     padding: 0;
-    /* border-left: 5px solid #fff;
-    border-right: 5px solid #fff; */
-    background-color: rgb(255, 41, 41);
+    /* background-color: rgb(255, 95, 95); */
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #414345, #232526);
+    background: linear-gradient(to bottom, #414345, #232526); 
     color: whitesmoke;
 }
 
@@ -29,7 +33,13 @@ footer {
     /* border-left: 5px solid #fff;
     border-right: 5px solid #fff; */
     color: whitesmoke;
-    background-color: rgb(255, 41, 41);
+    /* background-color: rgb(255, 41, 41); */
+    /* background-color: rgb(255, 95, 95); */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);  
+    background: linear-gradient(to left, #434343, #000000);
+
+
 }
 
 h2 {
@@ -47,7 +57,9 @@ li {
 }
 
 .navbar {
-    background: rgb(255, 0, 0);
+    background: #fd746c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ff9068, #fd746c);
+    background: linear-gradient(to bottom, #ff9068, #fd746c); 
     color: whitesmoke;
     height: 100px;
     width: 100%;
@@ -98,6 +110,9 @@ Div has 2 Children (Logo & Nav) */
 }
 
 .about-left {
+    background: #fd746c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ff9068, #fd746c);
+    background: linear-gradient(to bottom, #ff9068, #fd746c); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +142,9 @@ Div has 2 Children (Logo & Nav) */
 }
 
 .work-left {
+    background: #fd746c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ff9068, #fd746c);
+    background: linear-gradient(to bottom, #ff9068, #fd746c); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,6 +416,9 @@ Div has 2 Children (Logo & Nav) */
 }
 
 .contact-left {
+    background: #fd746c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ff9068, #fd746c);
+    background: linear-gradient(to bottom, #ff9068, #fd746c); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -439,6 +460,11 @@ Div has 2 Children (Logo & Nav) */
     .about-left,.work-right,.contact-left {
         border-right: none;
         border-left: none;
+        background: none;
+    }
+
+    .work-left {
+        background: none;
     }
 
     h2 {
