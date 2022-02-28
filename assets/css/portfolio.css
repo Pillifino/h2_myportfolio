@@ -154,15 +154,60 @@ Div has 2 Children (Logo & Nav) */
     box-sizing: border-box;
 }
 
-.work-right img {
-    border: 5px solid black;
-    box-sizing: border-box;
-    opacity: .7;
+/* Project Name Appears When Hovering over image */
+.work-right .box-1 {
+    display: block;
+    width: 100%;
 }
 
-.work-right img:hover {
+.image-1-container {
+    position: relative;
+    width: 100%;
+}
+
+.box-1-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.box-1-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.box-1-overlay:hover {
     opacity: 1;
 }
+
+.box-1-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.box-1-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* .work-right img {
+    border: 1px solid black;
+    box-sizing: border-box;
+    opacity: .7;
+} */
+
+/* .work-right img:hover {
+    opacity: 1;
+} */
 
 .box-1 {
     width: 100%;
