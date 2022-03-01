@@ -480,6 +480,11 @@ Div has 2 Children (Logo & Nav) */
         align-items: center;
     }
 
+    .contact-left {
+        border-top: none;
+        border-bottom: none;
+    }
+
     .contact-right {
         flex-direction: column;
         justify-content: center;
