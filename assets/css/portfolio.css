@@ -466,13 +466,22 @@ Div has 2 Children (Logo & Nav) */
         background: none;
     }
 
-    .work-left {
-        background: none;
+    .about-left, .contact-left {
+        border-top: 5px solid #fff;
+        border-bottom: 5px solid #fff;
+        width:50%;
     }
 
-    h2 {
-        text-decoration:underline;
+    .work-left {
+        background: none;
+        border-top: 5px solid #fff;
+        border-bottom: 5px solid #fff;
+        width:50%;
     }
+
+    /* h2 {
+        text-decoration:underline;
+    } */
     
     .container,.about-container,.work-container,.contact-container {
         flex-direction: column;
