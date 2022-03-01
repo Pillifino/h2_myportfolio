@@ -112,7 +112,7 @@ Div has 2 Children (Logo & Nav) */
     margin-bottom: 15px;
 }
 
-.about-left {
+.section-left {
     background: #fd746c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #ff9068, #fd746c);
     background: linear-gradient(to bottom, #ff9068, #fd746c); 
@@ -121,7 +121,7 @@ Div has 2 Children (Logo & Nav) */
     align-items: center;
     border-right: 5px solid #fff;
     border-right-style: double;
-    flex: 1;
+    flex: 0 0 20%;
 }
 
 .about-right {
@@ -144,26 +144,12 @@ Div has 2 Children (Logo & Nav) */
     height: 100%;
 }
 
-.work-left {
-    background: #fd746c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #ff9068, #fd746c);
-    background: linear-gradient(to bottom, #ff9068, #fd746c); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-
 .work-right {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-left: 5px solid #fff;
-    border-left-style:double;
-    flex: 4;
+    flex: 1;
     box-sizing: border-box;
-    /* Temporary hack that allows the white line to match other sections */
-    margin-left: -14px;
 }
 
 .image-container {
@@ -458,14 +444,19 @@ Div has 2 Children (Logo & Nav) */
 /* Small Screens */
 @media only screen and (min-width: 400px) and (max-width:768px) {
     /* Recenter Logo When on mobile screens */
+    .nav {
+        padding: 0;
+    }
+
     .logo {
         margin-left: 0;
     }
-    
-    .about-left,.work-right,.contact-left {
-        border-right: none;
-        border-left: none;
+
+    .section-left {
         background: none;
+        border-right: none;
+        border-bottom: 5px solid #fff;
+        border-top: 5px solid #fff;
     }
 
     .about-left, .contact-left {
@@ -496,8 +487,7 @@ Div has 2 Children (Logo & Nav) */
     }
 
     .contact-left {
-        border-top: none;
-        border-bottom: none;
+        border-right: none;
     }
 
     .contact-right {
@@ -519,6 +509,7 @@ Div has 2 Children (Logo & Nav) */
         gap: 0;
         align-items: center;
         box-sizing: border-box;
+        padding: 0;
     }
 }
 
