@@ -134,6 +134,11 @@ Div has 2 Children (Logo & Nav) */
     flex: 4;
 }
 
+.about-right .my-image {
+    width: 30%;
+    border: 2px solid #fff;
+}
+
 /* Work Section */
 .work-container {
     display: flex;
@@ -463,6 +468,11 @@ Div has 2 Children (Logo & Nav) */
         border-top: 5px solid #fff;
         border-bottom: 5px solid #fff;
         width:50%;
+    }
+
+    .about-right {
+        margin-top: 30px;
+        flex-direction: column;
     }
 
     .work-left {
