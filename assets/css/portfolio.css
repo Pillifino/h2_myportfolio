@@ -20,6 +20,8 @@ main {
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #414345, #232526);
     background: linear-gradient(to bottom, #414345, #232526); 
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
     color: whitesmoke;
 }
 
@@ -477,6 +479,10 @@ Div has 2 Children (Logo & Nav) */
         border-top: 5px solid #fff;
         border-bottom: 5px solid #fff;
         width:50%;
+    }
+
+    .work-right {
+        margin: 30px;
     }
 
     /* h2 {
