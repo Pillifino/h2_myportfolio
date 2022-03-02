@@ -5,6 +5,8 @@
   
   **Project Details**
   Added "About Me" & Work Section inside main section and "Contact Me" Section in footer section
+  
   Added Links in navigation bar that takes you to each desired section of the webpage
+  
   Added media queries that restyle the page for better screen responsiveness
   
