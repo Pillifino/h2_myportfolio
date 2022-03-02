@@ -13,7 +13,7 @@
   
   Semantic Tags added for accessiblity
   
-  Here's a video showcasing the website!
+  **Here's a video showcasing the website!**
   
   https://user-images.githubusercontent.com/98142990/156307898-3f3e9540-3555-4c5e-a67f-b019005244a0.mp4
 
