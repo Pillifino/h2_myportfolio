@@ -338,11 +338,9 @@ Div has 2 Children (Logo & Nav) */
     .section-left {
         background: none;
         border-right: none;
-        border-bottom: 5px solid #fff;
-        border-top: 5px solid #fff;
     }
 
-    .about-left, .contact-left {
+    .contact-left {
         border-top: 5px solid #fff;
         border-bottom: 5px solid #fff;
         width:50%;
