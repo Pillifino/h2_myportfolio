@@ -219,6 +219,7 @@ Div has 2 Children (Logo & Nav) */
 .work-right .child_box {
     display: block;
     width: 100%;
+    height: 100%;
 }
 
 .child_container {
